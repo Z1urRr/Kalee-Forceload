@@ -1,0 +1,37 @@
+economy:
+  chunk-prices:
+    1-day: 100.0
+    3-day: 250.0
+    5-day: 400.0
+    7-day: 500.0
+    15-day: 1000.0
+  currency-name: "金币"
+
+chunk:
+  max-chunks-by-permission:
+    "kalee.forceload.mvp": 15
+    "kalee.forceload.vip": 5
+  default-max-chunks: 3
+
+messages:
+  prefix: "&c[KaleeForceload] &r"
+  no-permission: "你没有权限使用这个指令！"
+  economy-not-found: "未找到经济系统，请联系管理员"
+  insufficient-funds: "你的金币不足！需{price} {currency}，但你只有{balance} {currency}"
+  chunk-purchased: "成功购买区块！位置 {x}, {z}，花费 {price} {currency}"
+  chunk-already-owned: "这个区块已经被购买了"
+  max-chunks-reached: "你已经达到最大区块购买数量限制！({max})"
+  no-chunks-owned: "你还没有购买任何区块"
+  chunk-info: "区块位置: &e{x}, {z}"
+  balance-info: "你当前的余额: &e{balance} {currency}"
+
+gui:
+  main-menu:
+    title: "&6KaleeForceload 主菜单"
+    size: 27
+  chunk-list:
+    title: "&6已购买的区块"
+    size: 54
+  time-select:
+    title: "&6选择购买时长"
+    size: 27

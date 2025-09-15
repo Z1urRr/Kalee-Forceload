@@ -1,0 +1,26 @@
+name: KaleeForceload
+version: 1.0.0
+main: fun.kalee.forcedload.KaleeForceload
+api-version: 1.16
+author: daddyziur
+
+depend:
+  - Vault
+
+commands:
+  kaleeforceload:
+    description: KaleeForceload主指令
+    usage: /kaleeforceload <menu|checkmoney>
+    aliases: [kfl, forceload]
+    permission: kaleeforceload.use
+
+permissions:
+  kaleeforceload.use:
+    description: 使用KaleeForceload基本功能
+    default: true
+  kaleeforceload.admin:
+    description: 管理员权限
+    default: op
+  kaleeforceload.bypass:
+    description: 绕过购买限制
+    default: op
